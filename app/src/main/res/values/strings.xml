@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AcessibilityPOC</string>
+    <string name="meu_saldo">MEU SALDO</string>
+    <string name="saldo">Saldo</string>
+    <string name="inter">INTER</string>
+    <string name="meu_historico">MEU HISTÓRICO</string>
+    <string name="inserir_valor">INSERIR VALOR</string>
+    <string name="valor">Valor</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
 </resources>

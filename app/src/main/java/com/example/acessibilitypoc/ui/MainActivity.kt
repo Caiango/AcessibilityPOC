@@ -5,6 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.acessibilitypoc.R
 import com.example.acessibilitypoc.data.ItemsMock
 import com.example.acessibilitypoc.databinding.ActivityMainBinding
 
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setAccessibility() {
-        binding.imageView.contentDescription = "Logo do Banco Inter"
+        binding.imageView.contentDescription = getString(R.string.logo_inter)
         ViewCompat.setAccessibilityHeading(binding.txHistorico, true)
         ViewCompat.setAccessibilityHeading(binding.txInserir, true)
         ViewCompat.setAccessibilityHeading(binding.txMeuSaldo, true)

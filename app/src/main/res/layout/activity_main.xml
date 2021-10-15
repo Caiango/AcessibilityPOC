@@ -7,11 +7,12 @@
     tools:context=".ui.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txMeuSaldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/meu_saldo"
         android:text="@string/meu_saldo"
         android:textColor="@color/orange"
         android:textSize="20sp"
@@ -27,8 +28,8 @@
         android:text="@string/saldo"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/txMeuSaldo"
+        app:layout_constraintTop_toBottomOf="@+id/txMeuSaldo" />
 
     <TextView
         android:id="@+id/txSaldo"
@@ -42,10 +43,11 @@
         tools:text="R$ 500,00" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txHistorico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/meu_historico"
         android:text="@string/meu_historico"
         android:textColor="@color/orange"
         android:textSize="20sp"
@@ -60,17 +62,18 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/txInserir"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        tools:listitem="@layout/recycler_items"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="@+id/txHistorico"
+        app:layout_constraintTop_toBottomOf="@+id/txHistorico"
+        tools:listitem="@layout/recycler_items" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txInserir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/inserir_valor"
         android:text="@string/inserir_valor"
         android:textColor="@color/orange"
         android:textSize="20sp"
@@ -83,8 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7
-" />
+        app:layout_constraintGuide_percent="0.7" />
 
     <TextView
         android:id="@+id/txPlus"
@@ -95,8 +97,8 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/etValue"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="@+id/txInserir"
+        app:layout_constraintTop_toBottomOf="@+id/txInserir" />
 
     <TextView
         android:id="@+id/txMinus"
@@ -128,9 +130,9 @@
         android:layout_width="125dp"
         android:layout_height="128dp"
         android:layout_marginTop="16dp"
+        android:background="@mipmap/ic_inter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@mipmap/ic_inter" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

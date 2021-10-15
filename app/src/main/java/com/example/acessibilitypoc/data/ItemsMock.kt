@@ -1,7 +1,7 @@
 package com.example.acessibilitypoc.data
 
 object ItemsMock {
-    val itemslist: List<Items> = listOf(
+    val itemslist: ArrayList<Items> = arrayListOf(
         Items("Gasto 1", -110.0),
         Items("Ganho 1", 90.0),
         Items("Gasto 2", -58.9),

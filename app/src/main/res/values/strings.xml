@@ -1,13 +1,17 @@
 <resources>
     <string name="app_name">AcessibilityPOC</string>
     <string name="meu_saldo">MEU SALDO</string>
-    <string name="saldo">Saldo</string>
+    <string name="saldo">Saldo R$</string>
     <string name="inter">INTER</string>
     <string name="meu_historico">MEU HISTÓRICO</string>
     <string name="inserir_valor">INSERIR VALOR</string>
-    <string name="valor">Valor</string>
+    <string name="valor">Insira um valor</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
     <string name="logo_inter">Logo do Banco Inter</string>
-    <string name="name">Name</string>
+    <string name="name">Insira um nome</string>
+    <string name="adicionar_valor_positivo">Adicionar Valor Positivo</string>
+    <string name="adicionar_valor_negativo">Adicionar valor Negativo</string>
+    <string name="usuario">Usuário</string>
+    <string name="caio_valenca">Caio Valença</string>
 </resources>

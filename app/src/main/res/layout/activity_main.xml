@@ -24,11 +24,55 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="@+id/txMeuSaldo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toEndOf="@+id/txMeuSaldo"
+            app:layout_constraintTop_toTopOf="@+id/txMeuSaldo">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:contentDescription="@string/usuario"
+                android:text="@string/usuario"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/caio_valenca"
+                android:text="@string/caio_valenca"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:importantForAccessibility="no"
             android:text="@string/saldo"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -39,12 +83,12 @@
             android:id="@+id/txSaldo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="R$ 500,00"
+            android:layout_marginStart="8dp"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="@+id/textView2" />
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            tools:text="500,00" />
 
         <TextView
             android:id="@+id/txHistorico"
@@ -96,18 +140,20 @@
             android:id="@+id/txPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/adicionar_valor_positivo"
             android:text="@string/plus"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/etValue"
             app:layout_constraintStart_toStartOf="@+id/txInserir"
-            app:layout_constraintTop_toBottomOf="@+id/txInserir" />
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
 
         <TextView
             android:id="@+id/txMinus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/adicionar_valor_negativo"
             android:text="@string/minus"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -123,8 +169,8 @@
             android:ems="10"
             android:gravity="center"
             android:hint="@string/valor"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="@+id/txPlus"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/txPlus" />
@@ -143,14 +189,14 @@
             android:id="@+id/etName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/name"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etValue"
             app:layout_constraintStart_toStartOf="@+id/etValue"
-            app:layout_constraintTop_toBottomOf="@+id/etValue" />
+            app:layout_constraintTop_toBottomOf="@+id/txInserir" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
